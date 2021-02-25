@@ -8,21 +8,21 @@ Olimpia Milano - Cantù | 55 - 60 -->
 <?php 
     $partite = [
 
-        'tappa_uno' => [
+        [
             'squadraCasa' => 'Italia',
             'squadraOspite' => 'Svizzera',
             'puntiCasa' => 20,
             'puntiOspite' => 0
         ],
 
-        'tappa_due' => [
+        [
             'squadraCasa' => 'Azerbaigian',
             'squadraOspite' => 'Birmania',
             'puntiCasa' => 20,
             'puntiOspite' => 40
         ],
 
-        'tappa_tre' => [
+        [
             'squadraCasa' => 'Honduras',
             'squadraOspite' => 'Montenegro',
             'puntiCasa' => 30,
@@ -31,9 +31,6 @@ Olimpia Milano - Cantù | 55 - 60 -->
        
     ]
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,12 +41,10 @@ Olimpia Milano - Cantù | 55 - 60 -->
     <title>Document</title>
 </head>
 <body>
-    
-<!-- <h3><?php var_dump($partite) ?></h3> -->
 
-<p><?php for ($i=0; $i < count($partite) ; $i++) { ?>
-    <p><?php $partite[$i]; ?></p>
-<?php }?></p>
+<?php for ($i = 0; $i < count($partite); $i++) { ?>
+    <p><?php echo $partite[$i]['squadraCasa'] .' - ' .$partite[$i]['squadraOspite'] .' | ' .$partite[$i]['puntiCasa'] .' - ' .$partite[$i]['puntiOspite']; ?></p>
+<?php }?>
 
 
 </body>
