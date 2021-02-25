@@ -8,21 +8,21 @@ Olimpia Milano - Cantù | 55 - 60 -->
 <?php 
     $partite = [
 
-        $tappa_uno => [
+        'tappa_uno' => [
             'squadraCasa' => 'Italia',
             'squadraOspite' => 'Svizzera',
             'puntiCasa' => 20,
             'puntiOspite' => 0
         ],
 
-        $tappa_due => [
+        'tappa_due' => [
             'squadraCasa' => 'Azerbaigian',
             'squadraOspite' => 'Birmania',
             'puntiCasa' => 20,
             'puntiOspite' => 40
         ],
 
-        $tappa_tre => [
+        'tappa_tre' => [
             'squadraCasa' => 'Honduras',
             'squadraOspite' => 'Montenegro',
             'puntiCasa' => 30,
