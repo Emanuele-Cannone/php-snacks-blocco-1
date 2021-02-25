@@ -31,8 +31,7 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”.
 
     <?php } ?>
 
-
-        <!-- stampa la variabile messaggio -->
+    <!-- stampa la variabile messaggio -->
     <p><?php echo $messaggio ?></p>
 
 </body>

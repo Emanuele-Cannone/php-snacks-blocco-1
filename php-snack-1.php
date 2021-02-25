@@ -6,7 +6,7 @@ Olimpia Milano - Cantù | 55 - 60 -->
 
 
 <?php 
-    $partite = [
+    $matches = [
 
         [
             'squadraCasa' => 'Italia',
@@ -42,8 +42,16 @@ Olimpia Milano - Cantù | 55 - 60 -->
 </head>
 <body>
 
-<?php for ($i = 0; $i < count($partite); $i++) { ?>
-    <p><?php echo $partite[$i]['squadraCasa'] .' - ' .$partite[$i]['squadraOspite'] .' | ' .$partite[$i]['puntiCasa'] .' - ' .$partite[$i]['puntiOspite']; ?></p>
+<?php for ($i = 0; $i < count($matches); $i++) { ?>
+    
+    <!-- stampa: matches di [index][squadraCasa] - matches di [index][squadraOspite] -->
+    <p><?php echo $matches[$i]['squadraCasa'] .' - ' .$matches[$i]['squadraOspite'] ?>
+
+        <!-- matches di [index][puntiCasa] - matches di [index][puntiOspite] -->
+        <span><?php echo ' | ' .$matches[$i]['puntiCasa'] .' - ' .$matches[$i]['puntiOspite']; ?></span>
+    
+    </p> 
+
 <?php }?>
 
 
