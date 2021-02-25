@@ -7,7 +7,7 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”.
 
 
 <?php 
-    $messaggio = 'Accesso riuscito'; #dichiaro la variabile messaggio
+    $messaggio = 'Accesso negato'; #dichiaro la variabile messaggio
     $nome = $_GET["name"]; #dichiaro i vari get
     $mail = $_GET["mail"];
     $eta = $_GET["age"];
@@ -26,18 +26,14 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”.
     <!-- se la lunghezza di nome è maggiore di 3 && la variabile mail include sia il '.' che la '@' && la variabile eta è un numero -->
     <?php if (strlen($nome) > 3 && strpos($mail, '.') && strpos($mail, '@') && is_numeric($eta)) { ?>
 
+        <!-- cambia la variabile messaggio -->
+        <!-- <?php $messaggio = 'Accesso riuscito' ?> -->
+
+    <?php } ?>
+
+
         <!-- stampa la variabile messaggio -->
-        <p> <?php echo $messaggio ?></p>
-
-        <!-- altrimenti -->
-    <?php } else {?>
-
-        <!-- altrimenti la variabile messaggio cambia -->
-        <?php $messaggio = 'Accesso negato' ?>
-        <!-- stampa la variabile messaggio cambiata -->
-        <p> <?php echo $messaggio ?></p>
-
-    <?php }?>
+    <p><?php echo $messaggio ?></p>
 
 </body>
 </html>
